@@ -13,6 +13,6 @@ export class LoginPage {
         await this.userPassword.fill(userPassword);
         await this.loginButton.click();
         await this.page.waitForURL('https://www.saucedemo.com/inventory.html');
-        await this.page.pause();
+        // await this.page.pause();
     }
 }

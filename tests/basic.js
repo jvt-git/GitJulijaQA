@@ -44,7 +44,7 @@
 
 //     return "Viską sudėjus turėsime " + veiksmas + " blynų";
 // }
-
+// salyga nuo, iki ko, salyga ka i++ =i+1
 
 for (let i = 1; i<=6; i++){
     console.log("Iteracija: " +i);
