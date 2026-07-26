@@ -4,7 +4,9 @@ import { CartPage } from '../page_objects/CartPage';
 import { CheckoutPageOne } from '../page_objects/CheckoutPageOne';
 import { CheckoutPageTwo } from '../page_objects/CheckoutPageTwo';
 import { LogoutPage } from '../page_objects/LogoutPage';
-import { StepPage } from '../page_objects/StepPage';
+
+// import { StepPage } from '../page_objects/StepPage';
+
 
 //??? kaip paleisti atskiram browseryje ka daro kodas???  >   npx playwright test --headed --debug
 // const browser = await chromium.launch({
@@ -14,15 +16,23 @@ import { StepPage } from '../page_objects/StepPage';
 test.only('pirmas testas', async ({ page }) => {
 // await page.goto('https://www.saucedemo.com/');
 const loginPage = new LoginPage(page);
-const stepPage = new StepPage(page);
+const cartPage = new CartPage(page)
+// const stepPage = new StepPage(page);
 
 await loginPage.userLoginWithPassword('standard_user', 'secret_sauce');
-
-for( let i=0; i<6; i++){
-await stepPage.clickCSS('.btn.btn_primary.btn_small.btn_inventory');
+await cartPage.userAddToCart();
 await page.pause();
-}
 });
+
+
+//  ...... po viena prideda.....
+// for( let i=0; i<6; i++){
+// await stepPage.clickCSS('.btn.btn_primary.btn_small.btn_inventory');
+// await page.pause();
+// }
+// });
+   
+
 
 
 
