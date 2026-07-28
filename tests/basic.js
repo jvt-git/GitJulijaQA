@@ -46,10 +46,26 @@
 // }
 // salyga nuo, iki ko, salyga ka i++ =i+1
 
-for (let i = 1; i<=6; i++){
-    console.log("Iteracija: " +i);
-    console.log(i+10);
+// for (let i = 1; i<=6; i++){
+//     console.log("Iteracija: " +i);
+//     console.log(i+10);
+// }
+
+
+let vabalai = ["Boružė", "Drugelis", "Bitė"]
+
+// vabalai.pop();
+vabalai.unshift("Žiogas");
+vabalai.push("Skruzdelė");
+vabalai.sort();
+console.log(vabalai);
+console.log("vabalų skačius/ilgis array - " + vabalai.length)
+console.log(vabalai.indexOf("Drugelis"))
+
+for (let i = 0; i < vabalai.length; i++) {
+    console.log("įprastas būdas - " + vabalai[i]);
 }
 
-
-
+for(vabalas of vabalai){
+console.log("naujas būdas - " + vabalas);
+}
