@@ -57,10 +57,10 @@ let vabalai = ["Boružė", "Drugelis", "Bitė"]
 // vabalai.pop();
 vabalai.unshift("Žiogas");
 vabalai.push("Skruzdelė");
-// vabalai.sort();
-// console.log(vabalai);
-// console.log("vabalų skačius/ilgis array - " + vabalai.length)
-// console.log(vabalai.indexOf("Drugelis"))
+vabalai.sort();
+console.log(vabalai);
+console.log("vabalų skačius/ilgis array - " + vabalai.length)
+console.log(vabalai.indexOf("Drugelis"))
 
 for (let i = 0; i < vabalai.length; i++) {
     console.log("įprastas būdas - " + vabalai[i]);

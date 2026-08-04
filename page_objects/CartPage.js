@@ -28,7 +28,7 @@ export class CartPage {
         // await this.itemOne.click();
         await this.shoppingCart.click();
         await this.page.waitForURL('https://www.saucedemo.com/cart.html');
-        expect(await cartPage.getCartBadgeText()).toBe(itemCount.toString());
+       expect(await cartPage.getCartBadgeText()).toBe(itemCount.toString());
         await this.page.pause();
         
     }
