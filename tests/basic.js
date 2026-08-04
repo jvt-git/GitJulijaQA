@@ -61,6 +61,7 @@ vabalai.sort();
 console.log(vabalai);
 console.log("vabalų skačius/ilgis array - " + vabalai.length)
 console.log(vabalai.indexOf("Drugelis"))
+// jhv
 
 for (let i = 0; i < vabalai.length; i++) {
     console.log("įprastas būdas - " + vabalai[i]);
