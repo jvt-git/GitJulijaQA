@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+"scripts": {
+"bdd:generate": "bddgen",
+"test": "bddgen && playwright test",
+"test:headed": "bddgen && playwright test --headed"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jvt-git/GitJulijaQA.git"
@@ -17,7 +21,8 @@
   },
   "homepage": "https://github.com/jvt-git/GitJulijaQA#readme",
   "devDependencies": {
-    "@playwright/test": "^1.61.1",
-    "@types/node": "^26.1.1"
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.1.1",
+    "playwright-bdd": "^9.2.0"
   }
 }
